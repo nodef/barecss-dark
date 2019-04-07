@@ -12,10 +12,10 @@ button@{n}, button@{x}, input[type=submit], [btn] {
 	color: @primary;
 	display: inline-block;
 	padding: 1.4rem 2rem;
-	background: #fff;
+	background: @background;
 	border: 1px solid @primary;
 	border-radius: 2px;
-	box-shadow: 0 0 0 rgba(0,0,0,0);
+	box-shadow: 0 0 0 @shadow;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -39,7 +39,7 @@ button@{n}, button@{x}, input[type=submit], [btn] {
 	}
 	
 	&:not(:disabled):hover {
-		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+		box-shadow: 2px 2px 4px @shadow-light;
 		background: @grey-ultralight;
 		
 		&:active {

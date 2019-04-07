@@ -5,7 +5,7 @@
 
 
 nav@{n}, nav@{x} {
-	background: #fff;
+	background: @background;
 	color: @black;
 	padding: 0 2rem;
 	border-bottom: 1px solid @primary;
@@ -16,7 +16,7 @@ nav@{n}, nav@{x} {
 	// eg: <nav fx></nav>
 	
 	&[fx] {
-		background: rgba(255,255,255,0.95);
+		background: @background-light;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -90,7 +90,7 @@ nav@{n}, nav@{x} {
 	menu {
 		padding: 0;
 		margin: 0;
-		background: #fff;
+		background: @background;
 		z-index: 2;
 		text-align: left;
 		white-space: nowrap;
@@ -218,7 +218,7 @@ nav@{n}, nav@{x} {
 				transform: translate3d(100%,0,0);
 				border-top: 1px solid @primary;
 				text-align: left;
-				background: #fff;
+				background: @background;
 				box-shadow: @box-shadow;
 				overflow-x: visible;
 				overflow-y: auto;

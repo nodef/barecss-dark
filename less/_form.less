@@ -15,10 +15,10 @@ button {
 		color: @primary;
 		display: inline-block;
 		padding: 1.4rem 2rem;
-		background: #fff;
+		background: @background;
 		border: 1px solid @primary;
 		border-radius: 2px;
-		box-shadow: 0 0 0 rgba(0,0,0,0);
+		box-shadow: 0 0 0 @shadow;
 		text-transform: uppercase;
 		text-decoration: none;
 		text-align: center;
@@ -29,7 +29,7 @@ button {
 		-webkit-appearance: none;
 		
 		&:not(:disabled):hover, &:not(:disabled):focus {
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 2px 4px @shadow-light;
 			background: @grey-ultralight;
 		}
 	}
@@ -116,7 +116,7 @@ select@{n}, select@{x} {
 	display: block;
 	width: 100%;
 	border: 1px solid @grey-light;
-	background: #fff data-uri('../icons/chevron-down.svg') no-repeat right 1rem center;
+	background: @background data-uri('../icons/chevron-down.svg') no-repeat right 1rem center;
 	background-size: 2rem;
 	border-radius: 2px;
 	height: 4rem;
@@ -161,7 +161,7 @@ input {
 					width: 2rem;
 					height: 2rem;
 					border: 1px solid @grey-mid;
-					background: #fff;
+					background: @background;
 					vertical-align: middle;
 					margin-right: 1rem;
 				}
