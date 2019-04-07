@@ -31,10 +31,10 @@
 @primary:		       #679;
 @primary--:	       #fff; // contrasting colour to the primary colour
 @secondary:	       #fd0;
-@background:       rgba(0,0,0,0);
+@background:       rgba(0,0,0,1);
 @background-light: rgba(0,0,0,0.95);
-@shadow:           rgba(0,0,0,0);
-@shadow-light:     rgba(0,0,0,0.3); 
+@shadow:           rgba(255,255,255,0);
+@shadow-light:     rgba(255,255,255,0.3); 
 
 
 // set overall temperature with hue and intensity with saturation
@@ -45,26 +45,26 @@
 
 // blacks and greys inherit colour temperature of hue and saturation
 
-@black:				hsl(@hue,@sat,20%);
+@black:				hsl(@hue,@sat,80%);
 
-@grey-ultralight:	hsl(@hue,@sat,96%);
-@grey-light:		hsl(@hue,@sat,90%);
-@grey-mid:			hsl(@hue,@sat,70%);
+@grey-ultralight:	hsl(@hue,@sat,04%);
+@grey-light:		hsl(@hue,@sat,10%);
+@grey-mid:			hsl(@hue,@sat,30%);
 @grey-dark:			hsl(@hue,@sat,50%);
-@grey-ultradark:	hsl(@hue,@sat,30%);
+@grey-ultradark:	hsl(@hue,@sat,70%);
 
 
 // transparent overlays to darken or lighten background colour
 
-@dark:				rgba(0,0,0,0.5);
-@darken:			rgba(0,0,0,0.1);
-@light:				rgba(255,255,255,0.5);
-@lighten:			rgba(255,255,255,0.1);
+@dark:				rgba(255,255,255,0.5);
+@darken:			rgba(255,255,255,0.1);
+@light:				rgba(0,0,0,0.5);
+@lighten:			rgba(0,0,0,0.1);
 
 
 // shadows
 
-@box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+@box-shadow: 0 1px 4px 0 rgba(255,255,255,0.2);
 
 
 // widths
