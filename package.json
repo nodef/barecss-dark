@@ -1,8 +1,8 @@
 {
   "name": "@barecss/dark",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A classless CSS framework (dark).",
-  "main": "index.js",
+  "main": "index.css",
   "scripts": {
     "prepublishOnly": "lessc less/bare.less > temp.css && cleancss -o index.css temp.css && rm temp.css",
     "test": "exit"
